@@ -16,6 +16,8 @@ L.ShowData ();
 L.Insert(30); L.Insert(50); L.Delete (10); 
 L.ShowData (); 
 
+/* This .cpp file contains the functions that are being called by the program. These were
+defined in list.cpp */
 
 //List S;
 //

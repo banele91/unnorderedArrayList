@@ -16,7 +16,7 @@ List::~List(void)
 bool List::IsEmpty () { return size==0;}
 bool List::IsFull () {return (size == MaxSize); }
 
-void List::Insert (DataType e)
+void List::Insert (DataType e) //function that inserts an item into a list
 {
  if (!(IsFull()))
  {    Item[size] = e;
@@ -26,7 +26,7 @@ void List::Insert (DataType e)
 
 
 /* ordinary function - not a member function */
-void Swap (DataType& x, DataType& y)
+void Swap (DataType& x, DataType& y) //function that swaps items on a list through a user define type Temp
 {                                
   DataType Temp;
   Temp = x;
@@ -34,7 +34,7 @@ void Swap (DataType& x, DataType& y)
   y =Temp;
 }                                  
 
-void List::Delete (DataType e)
+void List::Delete (DataType e) //function that deletes an item from a list
 { 
  int index = 0;    
 if  (!(IsEmpty()))
@@ -50,7 +50,7 @@ if  (!(IsEmpty()))
 }
 
 
-void List::ShowData ()
+void List::ShowData () //function that displays the elements of a list
 {
  for (int index = 0; index < size; index++)
     cout << Item[index] << "   ";
